@@ -4,7 +4,7 @@ function App() {
   const [msg, setMsg] = useState("");
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch("https://sorteo-647l.onrender.com/", {
+    const res = await fetch("https://sorteo-647l.onrender.com/participar", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email }),
