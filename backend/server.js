@@ -6,7 +6,9 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: "https://sorteo-nine-lyart.vercel.app",
+}));
 app.use(express.json());
 
 const pool = new pg.Pool({
