@@ -1,0 +1,5 @@
+CREATE TABLE participantes (
+  id SERIAL PRIMARY KEY,
+  email TEXT UNIQUE NOT NULL,
+  fecha TIMESTAMP DEFAULT NOW()
+);
